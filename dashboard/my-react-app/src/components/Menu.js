@@ -9,7 +9,7 @@ const Menu = () => {
         setSelectedMenu(index);
     }
     const handleProfileClick=(index)=>{
-        setIsProfileDropdownOpen(!setIsProfileDropdownOpen);
+        setIsProfileDropdownOpen(!isProfileDropdownopen);
     }
     const menuClass="menu";
     const activeMenuClass="menu selected";
@@ -18,7 +18,7 @@ const Menu = () => {
     
   return (
     <div className="menu-container">
-      <img src="media/logo.png" style={{ width: "50px" }} />
+     <img src="media/logo.png" alt="Zerodha Logo" style={{ width: "50px" }} />
       <div className="menus">
         <ul>
           <li>
