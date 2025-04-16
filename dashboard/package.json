@@ -1,5 +1,9 @@
 {
+  "scripts": {
+  "start": "PORT=3000 react-scripts start"
+},
   "dependencies": {
     "axios": "^1.8.4"
   }
 }
+

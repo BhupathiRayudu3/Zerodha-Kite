@@ -14,7 +14,7 @@ function Productpage() {
            
             <Hero />
             <LeftSection 
-            imageURL="media/images/kite.png" heading="Kite" paragraph="Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices." link1="#" link2="#" name1="Try demo" name2="Learn More" Googleplay="media/images/googlePlayBadge.svg" Appstore="media/images/appstoreBadge.svg" / >
+            imageURL="media/images/kite.png" heading="Kite" paragraph="Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices." link1="http://localhost:3001/redirect-to-my-react-app" link2="#" name1="Try demo" name2="Learn More" Googleplay="media/images/googlePlayBadge.svg" Appstore="media/images/appstoreBadge.svg" / >
             <RightSection
             imageURL="media/images/console.png" heading="Console" paragraph="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations." link1="#" link2="#" name1="" name2="Learn More" />
             <LeftSection 

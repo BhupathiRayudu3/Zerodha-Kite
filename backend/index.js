@@ -7,10 +7,10 @@ const mongoose=require("mongoose");
 //bpdy-parser and cors are most imp to get the database on the dashboard
 const bodyParser=require("body-parser");
 const cors=require("cors");
-
-
 const {HoldingsModel}=require('../backend/model/HoldingsModel');
 const {PositionsModel}=require('../backend/model/PositionsModel');
+const { OrdersModel } = require('./model/OrdersModel');
+
 const PORT=process.env.PORT ||3002;
 const uri=process.env.MONGO_URL;
 const app=express();
@@ -18,6 +18,10 @@ const app=express();
 app.use(cors());
 //here json is used because out database has been parsed in json format
 app.use(bodyParser.json());
+
+app.get('/redirect-to-my-react-app', (req, res) => {
+    res.redirect('http://localhost:3000'); // my-react-app running at port 3000
+});
 
 app.get('/allHoldings',async(req,res)=>{
     //here find is used to fetch database {} empty set is used to fetch all the records,if you want to give params we can give (i.e while using signup,login)
@@ -199,6 +203,17 @@ app.get('/allPositions',async(req,res)=>{
 //         res.send("Done!");
 // });
 
+app.post("/newOrder",async(req,res)=>{
+    let newOrder=new OrdersModel({
+        name: req.body.name,
+        qty: req.body.qty,
+        price: req.body.price,
+        mode: req.body.mode,
+    });
+    
+    newOrder.save();
+    res.send("Order Saved");
+});
 
 //it is used to know where our application has to be rendered,we will give a call back function to give what will happen when our app is started
 app.listen(PORT,()=>{
