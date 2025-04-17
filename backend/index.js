@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 // This will redirect to the React frontend
 app.get('/redirect-to-my-react-app', (req, res) => {
-    res.redirect('https://zerodha-web-app.vercel.app'); // my-react-app running at Vercel
+    res.redirect('https://zerodha-web-app-dashboard.vercel.app/'); // my-react-app running at Vercel
 });
 
 // Get all holdings from database
