@@ -41,12 +41,6 @@ Zerodha-Web-App/
 
 ---
 
-## 📸 Screenshots
-
-> _Coming Soon: Add screenshots/gifs of login page, dashboard, and holdings page._
-
----
-
 ## 🧪 How to Run Locally
 
 1. **Clone the repository**
@@ -66,6 +60,7 @@ Zerodha-Web-App/
    ```
 
 ---
+you can checkout my website here (https://zerodha-web-app.vercel.app/)
 
 ## 📌 Future Enhancements
 
