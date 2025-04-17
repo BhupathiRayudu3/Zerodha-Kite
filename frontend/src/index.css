@@ -45,6 +45,32 @@ code {
   color:Inherit;
   text-decoration: none;
   font-size: 12px;
-  
-  
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.phone-input span {
+  background-color: #f0f0f0;
+  padding: 10px 12px;
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.phone-input input {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+}
+
+.phone-input input::placeholder {
+  color: #999;
 }
