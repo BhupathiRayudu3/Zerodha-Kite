@@ -13,15 +13,15 @@ function Footer() {
             </p>
 
             <div className='icons1'>
-                        <a href='#' style={{color:'inherit'}}> <i class="fa fa-twitter" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
-                   <a href='#' style={{color:'inherit'}}><i class="fa fa-facebook-square" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
-                   <a href='#' style={{color:'inherit'}}> <i class="fa fa-instagram" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
-                   <a href='#' style={{color:'inherit'}}><i class="fa fa-linkedin" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
+                        <a href='#' aria-label="About Us Page"style={{color:'inherit'}}> <i class="fa fa-twitter" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
+                   <a href='#' aria-label="About Us Page"style={{color:'inherit'}}><i class="fa fa-facebook-square" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
+                   <a href='#' aria-label="About Us Page"style={{color:'inherit'}}> <i class="fa fa-instagram" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
+                   <a href='#' aria-label="About Us Page"style={{color:'inherit'}}><i class="fa fa-linkedin" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
                     </div>
                     <div className='icons2'>
-                    <a href='#' style={{color:'inherit'}}><i class="fa fa-youtube-play" aria-hidden="true" style={{fontSize:'20px'}}></i> </a>
-                    <a href='#' style={{color:'inherit'}}><i class="fa fa-whatsapp" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
-                    <a href='#' style={{color:'inherit'}}><i class="fa fa-telegram" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
+                    <a href='#' aria-label="About Us Page" style={{color:'inherit'}}><i class="fa fa-youtube-play" aria-hidden="true" style={{fontSize:'20px'}}></i> </a>
+                    <a href='#' aria-label="About Us Page" style={{color:'inherit'}}><i class="fa fa-whatsapp" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
+                    <a href='#' aria-label="About Us Page" style={{color:'inherit'}}><i class="fa fa-telegram" aria-hidden="true" style={{fontSize:'20px'}}></i></a>
                     </div>
           </div>
 
