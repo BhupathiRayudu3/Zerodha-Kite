@@ -47,6 +47,12 @@ app.get('/allPositions', async (req, res) => {
     res.json(allPositions); // Send positions as JSON
 });
 
+// GET all orders from database
+app.get("/allOrders", async (req, res) => {
+    let allOrders = await OrdersModel.find({});
+    res.json(allOrders); // Send as JSON
+});
+
 // API to insert new order into the database
 app.post("/newOrder", async (req, res) => {
     let newOrder = new OrdersModel({
