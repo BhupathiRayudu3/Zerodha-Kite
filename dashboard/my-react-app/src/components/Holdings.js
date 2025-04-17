@@ -26,7 +26,8 @@ const Holdings = () => {
   const[allHoldings,setAllHoldings]=useState([]);
   //Whatever your backend sends using res.json() or res.send() — that’s what ends up in res.data.
    useEffect(()=>{
-     axios.get("http://localhost:3002/allHoldings").then((res)=>{
+    //  axios.get("http://localhost:3002/allHoldings")
+    axios.get("https://your-vercel-backend.vercel.app/allHoldings").then((res)=>{
       console.log(res.data)
       setAllHoldings(res.data);
      });
